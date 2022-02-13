@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/cover" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/cover"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:onClick="openActivity"
+        app:srcCompat="@drawable/sparta_tic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_margin="35dp"
+        android:textAppearance="@style/Animation.Design.BottomSheetDialog"
+
+        />
+
+
+</RelativeLayout>
